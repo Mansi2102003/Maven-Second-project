@@ -18,6 +18,11 @@ public class CalculatorTest {
 	 void testMultiply() {
 		 assertEquals(20, calc.multiply(5, 4), "Multiplication should work");
 	 }
+	 @Test
+	 void testDivideByZero() {
+		 assertEquals(0, calc.multiply(5,0), "Multiplication with 0 should be zero");
+		 assertEquals(0, calc.multiply(0,5), "Multiplication with 0 should be zero");
+	 }
 	 
 
 }
